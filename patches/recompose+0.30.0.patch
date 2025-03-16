@@ -1,0 +1,26 @@
+diff --git a/node_modules/recompose/index.js b/node_modules/recompose/index.js
+index 9ef5091..13b2c25 100644
+--- a/node_modules/recompose/index.js
++++ b/node_modules/recompose/index.js
+@@ -1,11 +1,9 @@
+ "use strict";
+ 
+-var _interopRequireWildcard = require("@babel/runtime/helpers/interopRequireWildcard");
+-
+ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+ 
+ exports.__esModule = true;
+-exports.createEventHandlerWithConfig = exports.mapPropsStreamWithConfig = exports.componentFromStreamWithConfig = exports.setObservableConfig = exports.createEventHandler = exports.mapPropsStream = exports.componentFromStream = exports.hoistStatics = exports.nest = exports.componentFromProp = exports.createSink = exports.isClassComponent = exports.shallowEqual = exports.wrapDisplayName = exports.getDisplayName = exports.compose = exports.setDisplayName = exports.setPropTypes = exports.setStatic = exports.fromRenderProps = exports.toRenderProps = exports.toClass = exports.lifecycle = exports.getContext = exports.withContext = exports.onlyUpdateForPropTypes = exports.onlyUpdateForKeys = exports.pure = exports.shouldUpdate = exports.renderNothing = exports.renderComponent = exports.branch = exports.withReducer = exports.withStateHandlers = exports.withState = exports.flattenProp = exports.renameProps = exports.renameProp = exports.defaultProps = exports.withHandlers = exports.withPropsOnChange = exports.withProps = exports.mapProps = void 0;
++exports.wrapDisplayName = exports.withStateHandlers = exports.withState = exports.withReducer = exports.withPropsOnChange = exports.withProps = exports.withHandlers = exports.withContext = exports.toRenderProps = exports.toClass = exports.shouldUpdate = exports.shallowEqual = exports.setStatic = exports.setPropTypes = exports.setObservableConfig = exports.setDisplayName = exports.renderNothing = exports.renderComponent = exports.renameProps = exports.renameProp = exports.pure = exports.onlyUpdateForPropTypes = exports.onlyUpdateForKeys = exports.nest = exports.mapPropsStreamWithConfig = exports.mapPropsStream = exports.mapProps = exports.lifecycle = exports.isClassComponent = exports.hoistStatics = exports.getDisplayName = exports.getContext = exports.fromRenderProps = exports.flattenProp = exports.defaultProps = exports.createSink = exports.createEventHandlerWithConfig = exports.createEventHandler = exports.compose = exports.componentFromStreamWithConfig = exports.componentFromStream = exports.componentFromProp = exports.branch = void 0;
+ 
+ var _mapProps = _interopRequireDefault(require("./mapProps"));
+ 
+@@ -169,3 +167,7 @@ exports.createEventHandlerWithConfig = _createEventHandler.createEventHandlerWit
+ var _setObservableConfig = _interopRequireDefault(require("./setObservableConfig"));
+ 
+ exports.setObservableConfig = _setObservableConfig.default;
++
++function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
++
++function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+\ No newline at end of file
